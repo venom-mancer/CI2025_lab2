@@ -5,23 +5,23 @@
 This repository contains implementations of heuristic and metaheuristic algorithms for solving the Traveling Salesperson Problem (TSP), including Hill Climbing and Evolution Strategy (ES) approaches.
 
 ## Algorithms Overview that im using (made up algorithm):
-1-Start from an initial solution and perform standard hill climbing until we reach a local maximum — a point where no neighboring move improves the solution.
+1. Start from an initial solution and perform standard hill climbing until we reach a local maximum — a point where no neighboring move improves the solution.
 
-2-Instead of restarting from scratch, we backtrack halfway along the path we used to climb to that peak.
+2. Instead of restarting from scratch, we backtrack halfway along the path we used to climb to that peak.
 For example, we backtrack to the mid point of the path.
 This allows us to reuse part of the previous search effort that we think it lead us to a good point instead of throwing it away.
 
-3-From this halfway point, we explore a different branch — meaning we take a different move than before.
+3. From this halfway point, we explore a different branch — meaning we take a different move than before.
 We keep a memory (tabu-like list) of moves already tried from that point so we don’t repeat paths we already explored.
 
-4-We continue this process to discover multiple local peaks, storing each peak in a list of candidate solutions.
+4. We continue this process to discover multiple local peaks, storing each peak in a list of candidate solutions.
 
-5-After collecting several peaks, we compare them and select the best one as our current best solution.
+5. After collecting several peaks, we compare them and select the best one as our current best solution.
 
-6-Once the algorithm has explored all reasonable variations near these peaks, we allow a controlled downhill move or “jump” away from these areas (diversification).
+6. Once the algorithm has explored all reasonable variations near these peaks, we allow a controlled downhill move or “jump” away from these areas (diversification).
 This allows us to explore new regions of the solution space that are far from the current peaks, with the goal of finding a higher global peak.
 
-7-We repeat this process — climb, partial backtrack, branch, save peaks, diversify — until convergence or a stopping condition is reached.
+7. We repeat this process — climb, partial backtrack, branch, save peaks, diversify — until convergence or a stopping condition is reached.
 
 ### 1. Local Search Subroutine: Midpoint-Branch 2-opt
 
