@@ -83,28 +83,28 @@ A population-based metaheuristic that evolves a population of TSP tours using se
 
 Results comparing Hill Climbing (HC) and Evolution Strategy (ES) algorithms on various TSP problem instances.
 
-| Problem | HC Length | HC Time (s) | ES Length | ES Time (s) |
-|---------|-----------|-------------|-----------|-------------|
-| problem_g_10.npy | 1497.66 | 0.0019 | 1497.66 | 20.14 |
-| problem_g_100.npy | 4537.77 | 0.0289 | 4236.28 | 1.75 |
-| problem_g_1000.npy | 14088.74 | 1.7448 | 13145.82 | 7.17 |
-| problem_g_20.npy | 1756.76 | 0.0017 | 1755.51 | 2.03 |
-| problem_g_200.npy | 6558.90 | 0.0797 | 6159.64 | 2.48 |
-| problem_g_50.npy | 3006.48 | 0.0066 | 2798.11 | 1.48 |
-| problem_g_500.npy | 9846.98 | 0.4492 | 9558.57 | 5.11 |
-| problem_r1_10.npy | 193.98 | 0.0074 | 184.27 | 116.87 |
-| problem_r1_100.npy | 786.77 | 0.0180 | 793.52 | 2.36 |
-| problem_r1_1000.npy | 2634.04 | 1.5527 | 2607.11 | 9.07 |
-| problem_r1_20.npy | 357.55 | 0.0028 | 343.62 | 10.86 |
-| problem_r1_200.npy | 1137.02 | 0.0619 | 1134.03 | 2.16 |
-| problem_r1_50.npy | 628.94 | 0.0053 | 570.21 | 1.34 |
-| problem_r1_500.npy | 1770.80 | 0.3754 | 1744.10 | 4.77 |
-| problem_r2_10.npy | -411.70 | 0.0035 | -411.70 | 158.41 |
-| problem_r2_100.npy | -4611.97 | 0.0184 | -4586.26 | 19.61 |
-| problem_r2_1000.npy | -49399.75 | 1.4912 | -49315.46 | 12.68 |
-| problem_r2_20.npy | -776.65 | 0.0025 | -770.76 | 149.44 |
-| problem_r2_200.npy | -9593.56 | 0.0751 | -9435.47 | 9.76 |
-| problem_r2_50.npy | -2223.33 | 0.0062 | -2185.07 | 34.31 |
-| problem_r2_500.npy | -24449.52 | 0.3875 | -24523.88 | 8.13 |
-| test_problem.npy | 3221.82 | 0.0019 | 2823.79 | 1.58 |
+| Problem | HC Length | ES Length |
+|---------|-----------|-----------|
+| problem_g_10.npy | 1497.66 | 1497.66 |
+| problem_g_100.npy | 4537.77 | 4236.28 |
+| problem_g_1000.npy | 14088.74 | 13145.82 |
+| problem_g_20.npy | 1756.76 | 1755.51 |
+| problem_g_200.npy | 6558.90 | 6159.64 |
+| problem_g_50.npy | 3006.48 | 2798.11 |
+| problem_g_500.npy | 9846.98 | 9558.57 |
+| problem_r1_10.npy | 193.98 | 184.27 |
+| problem_r1_100.npy | 786.77 | 793.52 |
+| problem_r1_1000.npy | 2634.04 | 2607.11 |
+| problem_r1_20.npy | 357.55 | 343.62 |
+| problem_r1_200.npy | 1137.02 | 1134.03 |
+| problem_r1_50.npy | 628.94 | 570.21 |
+| problem_r1_500.npy | 1770.80 | 1744.10 |
+| problem_r2_10.npy | -411.70 | -411.70 |
+| problem_r2_100.npy | -4611.97 | -4586.26 |
+| problem_r2_1000.npy | -49399.75 | -49315.46 |
+| problem_r2_20.npy | -776.65 | -770.76 |
+| problem_r2_200.npy | -9593.56 | -9435.47 |
+| problem_r2_50.npy | -2223.33 | -2185.07 |
+| problem_r2_500.npy | -24449.52 | -24523.88 |
+| test_problem.npy | 3221.82 | 2823.79 |
 
