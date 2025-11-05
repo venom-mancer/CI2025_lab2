@@ -1,27 +1,22 @@
-# tsp_peak_backtrack_es_adaptive.py
 import numpy as np
 import random, glob, os
 from typing import List, Tuple, Optional
 from math import exp
 
 # -------------------- Global ES parameters --------------------
-MU = 8
-LAMBDA = 24
-GENERATIONS = 200
-K_CANDIDATES = 40
-NEIGH_LIMIT = 20
-SEED = 42   
+MU = 8 # number of parents
+LAMBDA = 24 # number of offspring
+GENERATIONS = 1000 # number of generations(iterations)
+K_CANDIDATES = 40 # number of candidates
+NEIGH_LIMIT = 20 # number of neighbors
+SEED = 42       # seed for random number generator
 
 # Strategy parameter learning rates (self-adaptation)
 TAU = 0.15       # global learning rate for log-normal mutation
 TAU_LOCAL = 0.05 # local rate
 
-# -----------------------------------------------------------------
-
 Move = Tuple[int, int]
 
-
-# ---------- Utility functions ----------
 def build_candidate_lists(D: np.ndarray, k: int = 20) -> List[List[int]]:
     n = D.shape[0]
     order = np.argsort(D, axis=1)
